@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box,
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      /* 1. 添加padding(填充物/内边距) 
+          1.1 会改变盒子大小
+      */
+      padding: 50px;
+      /* 2. 添加边框: 10px  直线  红色
+          2.1 也会影响盒子大小
+      */
+      border: 10px solid red;
+      /* 外边距50px */
+      margin: 50px;
+    }
+
+    .box2 {
+      background-color: pink;
+      /* 重新定义颜色 */
+      border-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    这是div
+  </div>
+  <div class="box2">
+    这是div
+  </div>
+</body>
+
+</html>

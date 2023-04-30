@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 去掉元素本身默认的外边距，内边距。保证元素在各个浏览器中初始状态一致 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+
+    .d2 {
+      background-color: pink;
+    }
+
+    /* margin 写法和padding一样多 */
+    /* left  right  top  bottom */
+    /* margin-left .... */
+    /* margin: 40px;
+    上右下左
+    margin: 40px 30px 20px 10px;
+    上下20px  左右30px
+    margin: 20px 30px;
+    上20px 左右10px  下30px
+    margin: 20px 10px 30px;
+     */
+  </style>
+</head>
+
+<body>
+  <div class="box d1"></div>
+  <div class="box d2"></div>
+  <p>这是一个p标签</p>
+</body>
+
+</html>

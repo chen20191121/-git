@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 去掉默认样式 */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+
+    .d1 {
+      margin-bottom: 50px;
+    }
+
+    .d2 {
+      background-color: orange;
+      margin-top: 30px;
+    }
+
+    .d3 {
+      /* margin-top: 100px; */
+    }
+
+    .d3 .inner-box {
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+      margin-top: 30px;
+    }
+
+    .d4 {
+      background-color: lightblue;
+      /* 1. 给父类容器添加一个border */
+      /* border: 1px solid red; */
+      /* 2. 给父类元素添加一个padding */
+      /* padding: 1px; */
+      /* 3. 父类盒子添加 overflow: hidden*/
+      overflow: hidden;
+    }
+
+    .d4 .inner-box {
+      width: 160px;
+      height: 100px;
+      background-color: orange;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    1. 如果上面的盒子定义margin-bottom，而且下面的盒子也定义了margin-top。最终的呈现效果是哪个值大显示哪个。
+      这个问题我们称之为： margin重叠。
+    2. 如果外层块状元素没有设置margin-top，里面子元素设置了margin-top，则会造成本来应该作用在里面盒子的margin-top，
+      被作用到了外层盒子，这种现象我们称为  margin的嵌套崩塌。
+  -->
+  <div class="box d1">
+
+  </div>
+  <div class="box d2"></div>
+  <div class="box d3">
+    <div class="inner-box">
+
+    </div>
+  </div>
+
+  <hr>
+  <!-- margin重叠不会有影响，但嵌套崩塌一定会对我们的代码产生影响。如何解决嵌套崩塌？ -->
+  <hr>
+  <div class="box d4">
+    <div class="inner-box"></div>
+  </div>
+</body>
+
+</html>

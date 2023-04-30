@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* h1,
+    p,
+    a {
+      color: red;
+    } */
+    /* 通配符,所有选择器 */
+    * {
+      color: blue;
+    }
+
+    a {
+      /* !important修饰一个css属性,意思是权重最高! 10000 */
+      color: #000 !important;
+    }
+
+    .box .inner-box .inner-inner-box {
+      color: red;
+    }
+
+    .box .inner-inner-box.active {
+      color: blue;
+    }
+
+    .ul .li-item {
+      color: green;
+    }
+
+    .ul .li-item:hover {
+      color: red;
+      font-size: 22px;
+    }
+
+    /* 标记法 实现默认激活样式 */
+    .ul .li-item.active {
+      color: red;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>欢迎来到不凡学院</h1>
+  <p>这是p标签</p>
+  <a style="color: orange;" href="http://www.baidu.com">百度</a>
+
+  <!-- 补充 -->
+  <div class="box">
+    <div class="inner-box">
+      <div class="inner-inner-box active">
+        这是内部*2盒子
+      </div>
+    </div>
+  </div>
+  <!-- vscode内置了emmet快捷键 -->
+  <!-- ul>li.li-${li_$}*5 -->
+  <ul class="ul">
+    <li class="li-item">li_1</li>
+    <li class="li-item">li_2</li>
+    <li class="li-item">li_3</li>
+    <li class="li-item active">li_4</li>
+    <li class="li-item">li_5</li>
+  </ul>
+</body>
+
+</html>

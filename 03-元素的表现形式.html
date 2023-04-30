@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .a1 {
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+    }
+
+    span,
+    strong {
+      width: 200px;
+      height: 200px;
+    }
+
+    input,
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 非常重要,必须记住!!! -->
+  <!-- 根据标签的表现形式,分为三种: -->
+  <!-- 块状元素(石头) .
+    1. 独占一行(宽度默认100%) 
+    2. 宽高有效
+  -->
+  <!-- 不会自动换行的元素,分为行内元素和行内块元素
+    行内块元素(果冻)
+    1. 多个元素可以在同一行排放
+    2. 宽高有效
+    行内元素(水)
+    1. 多个行内元素可以在同一行排放
+    2. 宽高无效
+  -->
+  <!-- 块状元素 -->
+  <!-- 
+    h1~h6
+    div 
+    p 
+    ul>li  ol
+    table
+    form 
+  -->
+  <!-- 不换行的元素 -->
+  <!-- 行内块元素
+      input  
+      select 
+      textarea
+      img
+      button  
+    -->
+  <!-- 行内元素  
+      a
+      span 
+      strong em  i   b   q   ins  del   sup sub
+  -->
+  <a href="" class="a1">百度</a>
+  <span>这是span</span>
+  <strong>这是storng</strong>
+  <br>
+  <input type="text">
+  <img src="sm_kun.webp" alt="">
+  <button>提交</button>
+</body>
+
+</html>

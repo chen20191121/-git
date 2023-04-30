@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+       绝大部分字体样式都会继承
+       1. font-size   
+       2. color  
+       3. text-indent 
+       4. line-heigh
+       5. text-align
+       6. a标签的字体颜色特殊,不能继承颜色
+    */
+    .box {
+      width: 400px;
+      height: 400px;
+      background-color: pink;
+      font-size: 22px;
+      color: red;
+      /* 4. ctrl+shift+enter 在上面插入一行 */
+      /* text-indent: 2em; */
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .box .inner-box {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+    }
+
+    .box2 {
+      color: red;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    这是box
+    <div class="inner-box">
+      这是inner-box
+    </div>
+  </div>
+  <div class="box2">
+    这是box2
+    <a href="http://www.baidu.com">百度</a>
+  </div>
+</body>
+
+</html>
